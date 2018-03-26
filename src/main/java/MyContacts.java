@@ -6,7 +6,7 @@ import static java.sql.DriverManager.getConnection;
 /**
  * Created by User on 30.10.2017.
  */
-public class MyContacts {
+ class MyContacts {
     private int id;
 
     private String surname;
@@ -150,7 +150,7 @@ public class MyContacts {
     }
 
     public static void deleteContact(String url, String name, String password) {
-        int id = 5;
+        int id = 6;
         String SQL = "Delete from test.mytable t where t.id=" + id;
         try (
                 Connection conn = getConnection(url, name, password);
